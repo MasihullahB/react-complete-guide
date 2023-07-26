@@ -3,7 +3,6 @@ import styles from './InputForm.module.css';
 import Card from '../UI/Card/Card';
 import Button from '../UI/Button/Button';
 import ErrorModal from '../UI/ErrorModal/ErrorModal';
-import Wrapper from '../Helpers/Wrapper';
 const InputForm = ({ onUserAdded, isError }) => {
   const [username, setUsername] = useState('');
   const [age, setAge] = useState('');
@@ -43,7 +42,7 @@ const InputForm = ({ onUserAdded, isError }) => {
   };
 
   return (
-    <Wrapper>
+    <>
       {error && (
         <ErrorModal
           title={error.title}
@@ -70,7 +69,7 @@ const InputForm = ({ onUserAdded, isError }) => {
           <Button type='submit'>Add User</Button>
         </form>
       </Card>
-    </Wrapper>
+    </>
   );
 };
 export default InputForm;
