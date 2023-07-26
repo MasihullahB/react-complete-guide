@@ -1,19 +1,16 @@
-/* styles for class .userList with white background, black text, rounded border and centered on the screen */
-.userList {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 15px;
-  margin: 10px auto;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
+.users {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
 }
 
-.user {
-  margin: 5px 0;
-  font-weight: bold;
-  border: 1px solid gray;
-  padding: 5px;
-  font-size: 1rem;
+.users ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.users li {
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
 }
